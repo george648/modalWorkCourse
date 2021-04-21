@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./attachment/css/styles.css" />
+  </head>
+  <body>
+    
+    <div class="overlay_modal"></div>
+    <div class="container hide" id="container">
+        <div class="modal_window">
+          <h2 class="text_block">Enter your data to conect</h2>
+          <div class="input_block">
+            <input id="input_name" placeholder="enter your name" type="text" />
+            <p id="error_message_name" class="error_message hide">
+              Eneter correct name
+            </p>
+            <input
+              id="input_last_name"
+              placeholder="enter your last name "
+              type="text"
+            />
+            <p id="error_message_last_name" class="error_message hide">
+              Enter correct last name
+            </p>
+            <input
+              placeholder="enter your prhone 375295...."
+              id="input_number"
+              type="text"
+            />
+            <p class="error_message hide">Enter correct last name</p>
+            <input
+              class="password_input"
+              id="input_password"
+              placeholder="enter your password"
+              type="password"
+            />
+            <input
+              class="password_input"
+              id="repeat_input_password"
+              placeholder="repeat your password"
+              type="password"
+            />
+            <p id="error_message_password" class="error_message hide">
+              enter correct password
+            </p>
+            <button id="show_password">show password-text</button>
+          </div>
+          <div class="button_block">
+            <button id="regist_btn" disabled>Regist</button>
+            <button id="cancel_btn">Cancel</button>
+          </div>
+        </div>
+      </div>
+
+    <div class="notification hideNontification" id="notification">
+      <button id="closeBtn">
+        <i class="bi bi-x">x</i>
+      </button>
+      <div class="text">Hello! Sign in???</div>
+      <div class="button_block">
+        <button id="accept_button">Yes</button>
+      </div>
+    </div>
+    <!-- <script src="./attachment/js/child.js"></script> -->
+    <!-- <script src="./attachment/js/input.js"></script> -->
+    <script src="./attachment/js/script.js"></script>
+  </body>
+</html>
