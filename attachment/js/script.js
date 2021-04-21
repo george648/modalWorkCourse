@@ -16,6 +16,13 @@ const errorMessage = document.getElementById('error_message');
 const overLayModal = document.querySelector('.overlay_modal');
 
 
+window.addEventListener('keypress', event => {
+    if(event.code === 13) {
+        container.classList.add('hide');
+        overLayModal.style.display = 'none';
+    }
+})
+
 
 function compareInputPassowrd(inputPass, repeatInputPass) {
     inputPass = inputPassword.value;
